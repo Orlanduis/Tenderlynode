@@ -17,7 +17,7 @@ import { vMainnet } from '../tenderly-chains';
  
 const config = getDefaultConfig({
   appName: 'vRainbowKit App',
-  projectId: 'YOUR_PROJECT_ID',
+  projectId: 'https://virtual.mainnet.rpc.tenderly.co/859ee835-1907-49ae-85e1-4db1c240c6b0,
   chains: [
     mainnet,
     polygon,
