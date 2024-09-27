@@ -2,15 +2,17 @@ import { defineChain } from 'viem'
  
 export const vMainnet = defineChain({
   id: 73571,
-  name: 'Virtual Ethereum Mainnet',
+  name: 'Virtual EMainnet',
   nativeCurrency: { name: 'vEther', symbol: 'vETH', decimals: 18 },
   rpcUrls: {
-    default: { http: [process.env.TENDERLY_VIRTUAL_MAINNET_RPC!] }
+    default: {https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f }
   },
   blockExplorers: {
     default: {
-      name: 'Tenderly Explorer',
-      url: 'https://dashboard.tenderly.co/explorer/vnet/47cdac98-cda3-431a-8fce-9f31037a3d0c'
+      name: 'etherscan',
+      url: 'https://etherscan.io/'
+     name:'etherplorer'
+       url: 'https://etherplorer.io/'
     }
   },
   contracts: {
