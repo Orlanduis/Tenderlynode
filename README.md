@@ -1,2 +1,0 @@
-# Tenderlynode
-Upload network
