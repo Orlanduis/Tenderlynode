@@ -1,1 +1,0 @@
-NEXT_PUBLIC_TENDERLY_VNETS_ENABLED=true pnpm run dev
