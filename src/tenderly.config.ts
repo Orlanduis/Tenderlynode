@@ -10,22 +10,20 @@ export const vMainnet = Virtual ethereum mainnet({
   blockExplorers: {https://etherscan.io/
     default: {
       name: 'etherscan',
-      url: 'https://etherscan.io/'
-     name:'etherplorer'
-       url: 'https://etherplorer.io/'
+      url: 'https://etherscan.io/
     }
   },
   contracts: {
     ensRegistry: {
-      address: '0x4200000000000000000000000000000000000006'
+      address: '0x971167eee5601726584d4578fb9b9328A8Eb710B'
     },
     ensUniversalResolver: {
       address: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
-      blockCreated: 16773775
+      blockCreated: 20846935
     },
     multicall3: {
       address: '0x0000000000000000000000000000000000000000',
-      blockCreated: 14353601
+      blockCreated: 42640041
     }
   }
 })
