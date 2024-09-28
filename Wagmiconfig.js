@@ -18,8 +18,19 @@ export const config = createConfig({
   transports: {
     [mainnet.id]: http('https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f'),
     [vMainnet.id]: http('https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f!)
+    import { defineChain } from 'viem'
+
+export const virtual_mainnet = defineChain({
+  id: 20327,
+  name: 'Virtual Mainnet',
+  nativeCurrency: { name: 'VETH', symbol: 'VETH', decimals: 18 },
+  rpcUrls: {
+    default: { http: ['https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f'] }
   },
-  storage: createStorage({
-    storage: cookieStorage
-  }),
-})
+  blockExplorers: {
+    default: {
+      name: 'Tenderly Explorer',
+      url: 'https://virtual.mainnet.rpc.tenderly.co/859ee835-1907-49ae-85e1-4db1c240c6b0'
+    }
+  },
+ }                   
