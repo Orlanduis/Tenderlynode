@@ -14,7 +14,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         // Find your environment id at https://app.dynamic.xyz/dashboard/developer
         environmentId: 'ENVIRONMENT_ID',
         walletConnectors: [EthereumWalletConnectors],
-        evmNetworks: process.env.NEXT_PUBLIC_TENDERLY_VNETS_ENABLED ? tenderlyChains : [],
+        evmNetworks: process.env.NEXT_PUBLIC_TENDERLY_VNETS_ENABLED ? tenderlyChains : [
+  arbitrum,
+  base,
+  mainnet,
+  optimism,
+  polygon,
+  sepolia,],
       }}
     >
       <DynamicWagmiConnector>
