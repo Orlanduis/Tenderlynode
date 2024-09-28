@@ -1,13 +1,13 @@
 import { defineChain } from 'viem'
  
-export const vMainnet = defineChain({
+export const vMainnet = Virtual ethereum mainnet({
   id: ,20327
   name: 'Virtual EMainnet',
   nativeCurrency: { name: 'vEther', symbol: 'vETH', decimals: 18 },
-  rpcUrls: {
+  rpcUrls: {https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f
     default: {https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f }
   },
-  blockExplorers: {
+  blockExplorers: {https://etherscan.io/
     default: {
       name: 'etherscan',
       url: 'https://etherscan.io/'
