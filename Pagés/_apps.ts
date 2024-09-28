@@ -15,6 +15,12 @@ import {
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { vMainnet } from '../tenderly-chains';
  
+  arbitrum,
+  base,
+  mainnet,
+  optimism,
+  polygon,
+  sepolia,
 const config = getDefaultConfig({
   appName: 'vRainbowKit App',
   projectId: 'https://virtual.mainnet.rpc.tenderly.co/859ee835-1907-49ae-85e1-4db1c240c6b0,
@@ -24,7 +30,7 @@ const config = getDefaultConfig({
     optimism,
     arbitrum,
     base,
-    ...(process.env.NEXT_PUBLIC_TENDERLY_VNETS_ENABLED === 'true' ? [vMainnet] : []),
+    ...(process.env.NEXT_PUBLIC_TENDERLY_VNETS_ENABLED === 'true' ? [Mainnet] : [vMainnet]),
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
   ssr: true,
