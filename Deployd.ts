@@ -7,3 +7,4 @@ forge create Counter \
 --etherscan-api-key $TENDERLY_ACCESS_KEY \
 --verify \
 --verifier-url https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f/verify/etherscan
+npx hardhat run scripts/deploy.ts --network virtual_mainnet
