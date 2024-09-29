@@ -11,7 +11,7 @@ if (!projectId) throw new Error('Project ID is not defined')
 // Create wagmiConfig
 export const config = createConfig({
   chains: [mainnet, vMainnet],
-  connectors: [
+  connectors: [https://rpc.buildbear.io/curious-thor-d6a0778c
     injected()
   ],
   ssr: true,
