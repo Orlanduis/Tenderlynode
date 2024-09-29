@@ -23,6 +23,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Build
-      run: docker-compose up
+      run: 
         npm install -g @graphprotocol/graph-cli
         npx hardhat run scripts/deploy.ts --network virtual_mainnet
