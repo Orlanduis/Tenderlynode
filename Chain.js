@@ -1342,10 +1342,16 @@
            
         "polygon",
          
-        "sepolia",
-         
-        "virtual Ethereum mainnet": 
+        "sepolia", 
+
+        "nativeCurrency": {
+
+        "name": "virtual Ethereum mainnet",
+
+        "symbol": "VETH",
  
+        "decimals": 18
+      
         "url": "https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f",
         
         "rpc": "https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f",
@@ -1356,5 +1362,5 @@
         
         "currency": "VETH"
 
-        "explorer": https://etherscan.io/
+        "explorer": "https://etherscan.io/
         
