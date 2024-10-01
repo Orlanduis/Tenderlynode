@@ -1330,21 +1330,21 @@
 
            "name": "virtual Ethereum mainnet"
      
-        networks:
+        "networks":
      
-        arbitrum,
+        "arbitrum",
         
-        base,
+        "base",
      
-        mainnet,
+        "mainnet",
           
-        optimism,
+        "optimism",
            
-        polygon,
+        "polygon",
          
-        sepolia,
+        "sepolia",
          
-        virtual Ethereum mainnet: 
+        "virtual Ethereum mainnet": 
  
         "url": "https://virtual.mainnet.rpc.tenderly.co/9ff5bc0e-57bb-41cd-8ef8-3e34d6b70c7f",
         
@@ -1356,4 +1356,5 @@
         
         "currency": "VETH"
 
-        "explorer":
+        "explorer": https://etherscan.io/
+        
