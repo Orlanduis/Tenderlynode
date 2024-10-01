@@ -1,0 +1,11 @@
+import { DrpcProvider } from "drpc-sdk/dist/esm/providers/ethers";
+// for cjs
+// import { DrpcProvider } from 'drpc-sdk/dist/cjs/providers/ethers';
+ 
+async function getBlock(tag) {
+  let provider = new DrpcProvider({
+    dkey: "YOUR-API-KEY",
+    provider_ids: ["public"],
+  });
+  let block = await provider.getBlock(tag);
+}
